@@ -14,7 +14,7 @@
 	<p>Language: <c:out value="${book.language}"/></p>
 	<p>Pages: <c:out value="${book.numberOfPages}"/></p>
 	<a href="/books/${book.id}/edit">Edit Book</a>
-	<form action="/books/${book.id}/edit" method="post">
+	<form action="/books/${book.id}" method="post">
 		<input type="hidden" name="_method" value="delete">
 		<input type="submit" value="Delete">
 	</form>
